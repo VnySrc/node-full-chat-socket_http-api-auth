@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+   <!-- <header>
+        <h1 id="title"> Chat </h1>
+    </header> -->
+
+    <main id="mainPage">
+        <div id="containerChat" class="container">
+            <h2 class="titles">AREA DO CHAT</h2>
+            <ul id="messages" class="messages">
+
+            </ul>
+            <input id="inputText" type="text" placeholder="Digite..." autocomplete="off"/>
+        </div>
+
+        <div id="containerUsersList" class="container">
+            <h2 class="titles">AREA DOS USERS</h2>
+            <ul id="userList"  class="messages">
+
+            </ul>
+        </div>
+    </main>
+
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+body {
+    margin: 25px;
+    overflow: hidden;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+#title {
+    position: sticky;
+    margin: 0px;
+    text-align: center;
+    margin: -10px 0px 15px 0px;
+}
+
+#containerLogin {
+    display: none;
+    flex-direction: column;
+    background-color: aqua;
+    width: 80%;
+    height: 85vh;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 17px;
+    margin-top: 50px;
+    padding-top: -25px;
+}
+#inputName{
+    width: 50%;
+    padding: 5px;
+    outline: none;
+}
+
+
+#mainPage {
+    display: grid;
+    grid-template-columns: 79% 21%;
+}
+
+
+.container {
+    border: 1px solid black;
+    height: 570px;
+    width: 100%;
+
+    text-align: center;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#containerChat {
+    background-color: grey;
+}
+
+#containerUsersList{
+    background-color: rgb(170, 166, 166);
+}
+
+#messages {
+    list-style: none;
+    text-align: left;
+    margin: 20px;
+}
+#userList {
+    list-style: none;
+    text-align: left;
+    margin: 20px;
+}
+#inputText {
+    position: fixed;
+
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    right: 150px;
+    left: -150px;
+    bottom: 50px;
+    padding: 5px;
+}
+
+li {
+    padding:3px;
+    color: white;
+}
+
+.messages li.m-status {
+    color: #333;
+    font-style: italic;
+}
+.messages li.m-txt span {
+    font-weight: bold;
+    color: #0000FF;
+}
+.messages li.m-txt span.me {
+    color: #FF0000;
+}
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+.userAvatarImageChat {
+    border-radius: 25%;
+    object-fit: cover;
+    width: 75px;
+    height: 65px;
+}
+.userAvatarImageUsers {
+    border-radius: 25%;
+    object-fit: cover;
+    width: 45px;
+    height: 35px;
+    margin-left: -15px;
+}
+
+    </style>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script/main.js"></script>
+</body>
+</html>
