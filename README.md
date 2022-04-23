@@ -1,5 +1,11 @@
 # node-chat-socket_http-api-auth
 
+--> Projeto em Node.Js / Typescript
+* Projeto Chat com Socket /
+* Api RESTful para cadastro, login e Authenticação dos users do chat ultilizando JWT, Passport /
+* Upload e armazenamento de imagens ultilizando Multer e Sharp /
+* MySQL , com migrations, sequelize-cli /
+
 # Install
 
 ## npm install ##
