@@ -21,4 +21,4 @@ sequelize-cli db:migrate
 ## npm run start ##
 
 ## Acess ##
-https://127.0.0.1/SERVER_PORT=
+http://127.0.0.1/SERVER_PORT=
