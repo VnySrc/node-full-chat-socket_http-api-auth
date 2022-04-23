@@ -28,4 +28,3 @@ sequelize-cli db:migrate
 
 ## Acess ##
 http://127.0.0.1/SERVER_PORT=
-s
