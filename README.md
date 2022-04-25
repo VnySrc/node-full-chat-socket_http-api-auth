@@ -1,5 +1,11 @@
 # node-chat-socket_http-api-auth
 
+<video width="320" height="240" controls>
+  <source src="https://dms.licdn.com/playlist/C4D05AQETRWMvjf1ykQ/mp4-720p-30fp-crf28/0/1650741589089?e=2147483647&v=beta&t=8GMYgObn-WZUMDoJiAWjgqixlm666jSkqpPWNh4rg3A" type="video/mp4">
+  <source src="https://dms.licdn.com/playlist/C4D05AQETRWMvjf1ykQ/mp4-720p-30fp-crf28/0/1650741589089?e=2147483647&v=beta&t=8GMYgObn-WZUMDoJiAWjgqixlm666jSkqpPWNh4rg3A" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
 --> Projeto em Node.Js / Typescript
 * Projeto Chat com Socket /
 * Api RESTful para cadastro, login e Authenticação dos users do chat ultilizando JWT, Passport /
